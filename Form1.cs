@@ -19,6 +19,7 @@ namespace Play_Tic_Tac_Toe_game
         }
         public void check()
         {
+            //start here for player 1 winning conditions
             if (SLOT1_TOPLEFT.Text == "0" && SLOT2_TOPMIDDLE.Text == "0" && SLOT3_TOPRIGHT.Text == "0")
             {
                 MessageBox.Show("Player 1 won the game!");
@@ -50,6 +51,39 @@ namespace Play_Tic_Tac_Toe_game
             if (SLOT3_TOPRIGHT.Text == "0" && SLOT5_CENTER.Text == "0" && SLOT7_BOTTOMLEFT.Text == "0")
             {
                 MessageBox.Show("Player 1 won the game!");
+            }
+            //start her for player 2 winning conditions
+            if (SLOT1_TOPLEFT.Text == "X" && SLOT2_TOPMIDDLE.Text == "X" && SLOT3_TOPRIGHT.Text == "X")
+            {
+                MessageBox.Show("Player 2 won the game!");
+            }
+            if (SLOT1_TOPLEFT.Text == "X" && SLOT4_MIDDLELEFT.Text == "X" && SLOT7_BOTTOMLEFT.Text == "X")
+            {
+                MessageBox.Show("Player 2 won the game!");
+            }
+            if (SLOT1_TOPLEFT.Text == "X" && SLOT5_CENTER.Text == "X" && SLOT9_BOTTOMRIGHT.Text == "X")
+            {
+                MessageBox.Show("Player 2 won the game!");
+            }
+            if (SLOT2_TOPMIDDLE.Text == "X" && SLOT5_CENTER.Text == "X" && SLOT8_BOTTOMMIDDLE.Text == "X")
+            {
+                MessageBox.Show("Player 2 won the game!");
+            }
+            if (SLOT3_TOPRIGHT.Text == "X" && SLOT6_MIDDLERIGHT.Text == "X" && SLOT9_BOTTOMRIGHT.Text == "X")
+            {
+                MessageBox.Show("Player 2 won the game!");
+            }
+            if (SLOT4_MIDDLELEFT.Text == "X" && SLOT5_CENTER.Text == "X" && SLOT6_MIDDLERIGHT.Text == "X")
+            {
+                MessageBox.Show("Player 2 won the game!");
+            }
+            if (SLOT7_BOTTOMLEFT.Text == "X" && SLOT8_BOTTOMMIDDLE.Text == "X" && SLOT9_BOTTOMRIGHT.Text == "X")
+            {
+                MessageBox.Show("Player 2 won the game!");
+            }
+            if (SLOT3_TOPRIGHT.Text == "X" && SLOT5_CENTER.Text == "X" && SLOT7_BOTTOMLEFT.Text == "X")
+            {
+                MessageBox.Show("Player 2 won the game!");
             }
         }
     }
