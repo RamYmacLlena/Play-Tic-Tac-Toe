@@ -31,6 +31,26 @@ namespace Play_Tic_Tac_Toe_game
             {
                 MessageBox.Show("Player 1 won the game!");
             }
+            if (SLOT2_TOPMIDDLE.Text == "0" && SLOT5_CENTER.Text == "0" && SLOT8_BOTTOMMIDDLE.Text == "0")
+            {
+                MessageBox.Show("Player 1 won the game!");
+            }
+            if (SLOT3_TOPRIGHT.Text == "0" && SLOT6_MIDDLERIGHT.Text == "0" && SLOT9_BOTTOMRIGHT.Text == "0")
+            {
+                MessageBox.Show("Player 1 won the game!");
+            }
+            if (SLOT4_MIDDLELEFT.Text == "0" && SLOT5_CENTER.Text == "0" && SLOT6_MIDDLERIGHT.Text == "0")
+            {
+                MessageBox.Show("Player 1 won the game!");
+            }
+            if (SLOT7_BOTTOMLEFT.Text == "0" && SLOT8_BOTTOMMIDDLE.Text == "0" && SLOT9_BOTTOMRIGHT.Text == "0")
+            {
+                MessageBox.Show("Player 1 won the game!");
+            }
+            if (SLOT3_TOPRIGHT.Text == "0" && SLOT5_CENTER.Text == "0" && SLOT7_BOTTOMLEFT.Text == "0")
+            {
+                MessageBox.Show("Player 1 won the game!");
+            }
         }
     }
 }
