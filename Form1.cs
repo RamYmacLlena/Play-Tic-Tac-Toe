@@ -6,5 +6,10 @@ namespace Play_Tic_Tac_Toe_game
         {
             InitializeComponent();
         }
+
+        private void AllButton(object sender, EventArgs e)
+        {
+
+        }
     }
 }
