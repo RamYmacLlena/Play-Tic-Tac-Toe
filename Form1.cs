@@ -85,6 +85,29 @@ namespace Play_Tic_Tac_Toe_game
             {
                 MessageBox.Show("Player 2 won the game!");
             }
-        }
+            //else condition for when there is no winner
+            else
+            {
+                MessageBox.Show("");
+            }
+            if (MessageBox.Show("Do you want to play again?", "Confirmation Message", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                reset();
+            }
+            else
+            {
+                this.Close();
+            }
+            void reset()
+            {
+                foreach (Button b in this.Controls)
+                {
+                    b.Text = "";
+                    b.Enabled = true;
+                }
+                Count = 1;
+            }
+
     }
+}
 }
