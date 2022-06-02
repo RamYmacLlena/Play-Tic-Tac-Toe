@@ -1,0 +1,17 @@
+C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\bin\Debug\net6.0-windows\Play Tic Tac Toe game.exe
+C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\bin\Debug\net6.0-windows\Play Tic Tac Toe game.deps.json
+C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\bin\Debug\net6.0-windows\Play Tic Tac Toe game.runtimeconfig.json
+C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\bin\Debug\net6.0-windows\Play Tic Tac Toe game.dll
+C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\bin\Debug\net6.0-windows\Play Tic Tac Toe game.pdb
+C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\obj\Debug\net6.0-windows\Play Tic Tac Toe game.csproj.AssemblyReference.cache
+C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\obj\Debug\net6.0-windows\Play_Tic_Tac_Toe_game.Form1.resources
+C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\obj\Debug\net6.0-windows\Play Tic Tac Toe game.csproj.GenerateResource.cache
+C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\obj\Debug\net6.0-windows\Play Tic Tac Toe game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\obj\Debug\net6.0-windows\Play Tic Tac Toe game.AssemblyInfoInputs.cache
+C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\obj\Debug\net6.0-windows\Play Tic Tac Toe game.AssemblyInfo.cs
+C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\obj\Debug\net6.0-windows\Play Tic Tac Toe game.csproj.CoreCompileInputs.cache
+C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\obj\Debug\net6.0-windows\Play Tic Tac Toe game.dll
+C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\obj\Debug\net6.0-windows\refint\Play Tic Tac Toe game.dll
+C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\obj\Debug\net6.0-windows\Play Tic Tac Toe game.pdb
+C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\obj\Debug\net6.0-windows\Play Tic Tac Toe game.genruntimeconfig.cache
+C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\obj\Debug\net6.0-windows\ref\Play Tic Tac Toe game.dll
