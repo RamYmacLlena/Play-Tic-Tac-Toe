@@ -23,6 +23,10 @@ namespace Play_Tic_Tac_Toe_game
             {
                 MessageBox.Show("Player 1 won the game");
             }
+            if (SLOT1_TOPLEFT.Text == "0" && SLOT4_MIDDLELEFT.Text == "0" && SLOT7_BOTTOMLEFT.Text == "0")
+            {
+                MessageBox.Show("Player 1 won the game");
+            }
         }
     }
 }
