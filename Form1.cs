@@ -102,7 +102,7 @@ namespace Play_Tic_Tac_Toe_game
                 Tie = false;
                 MessageBox.Show("Player 1 won the game!");
             }
-            else if (Count == 9)
+            else if (Count == 9 && Tie == true)
             {
                 MessageBox.Show("The game has ended in a draw!");
             }
