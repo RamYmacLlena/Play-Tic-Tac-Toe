@@ -14,6 +14,15 @@ namespace Play_Tic_Tac_Toe_game
             Button b = (Button)sender;
             b.Text = (Count % 2 == 0) ? "0" : "X";
             b.Enabled = false;
+            if (b.Text == "X")
+            {
+                PLAYER1lbl.ForeColor = System.Drawing.Color.Red;
+                PLAYER2lbl.ForeColor = System.Drawing.Color.DarkGreen;
+            } else
+            {
+                PLAYER2lbl.ForeColor = System.Drawing.Color.Red;
+                PLAYER1lbl.ForeColor = System.Drawing.Color.DarkGreen;
+            }
             check();
             Count++;
         }
@@ -149,8 +158,12 @@ namespace Play_Tic_Tac_Toe_game
                 {
                     if (b.GetType() == typeof(Button))
                     {
-                        b.Text = "";
-                        b.Enabled = true;
+                        if (b.Text != "RESET")
+                        {
+                            b.Text = "";
+                            b.Enabled = true;
+                        }
+
                     }
                 }
                 Count = 0;
@@ -200,12 +213,35 @@ namespace Play_Tic_Tac_Toe_game
                 {
                     if (b.GetType() == typeof(Button))
                     {
-                        b.Text = "";
-                        b.Enabled = true;
+                        if (b.Text != "RESET")
+                        {
+                            b.Text = "";
+                            b.Enabled = true;
+                        }
+
                     }
                 }
                 Count = 0;
             }
+        }
+
+        private void RESETbtn_Click(object sender, EventArgs e)
+        {
+            foreach (Control b in this.Controls)
+            {
+                if (b.GetType() == typeof(Button))
+                {
+                    if (b.Text != "RESET")
+                    {
+                        b.Text = "";
+                        b.Enabled = true;
+                    }
+
+                }
+            }
+            Count = 1;
+            txtbxPlayer2.Text = "0";
+            txtbxPlayer1.Text = "0";
         }
     }
 }

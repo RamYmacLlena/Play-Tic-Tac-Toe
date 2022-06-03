@@ -40,10 +40,11 @@
             this.SLOT9_BOTTOMRIGHT = new System.Windows.Forms.Button();
             this.txtbxPlayer1 = new System.Windows.Forms.TextBox();
             this.txtbxPlayer2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.PLAYER1lbl = new System.Windows.Forms.Label();
+            this.PLAYER2lbl = new System.Windows.Forms.Label();
             this.P1WINSCORE = new System.Windows.Forms.Label();
             this.P2WINSCORE = new System.Windows.Forms.Label();
+            this.RESETbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SLOT1_TOPLEFT
@@ -149,27 +150,27 @@
             this.txtbxPlayer2.Text = "0";
             this.txtbxPlayer2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label2
+            // PLAYER1lbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Aquamarine;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(491, 24);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(187, 54);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "PLAYER 1";
+            this.PLAYER1lbl.AutoSize = true;
+            this.PLAYER1lbl.BackColor = System.Drawing.Color.Aquamarine;
+            this.PLAYER1lbl.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PLAYER1lbl.Location = new System.Drawing.Point(491, 24);
+            this.PLAYER1lbl.Name = "PLAYER1lbl";
+            this.PLAYER1lbl.Size = new System.Drawing.Size(187, 54);
+            this.PLAYER1lbl.TabIndex = 11;
+            this.PLAYER1lbl.Text = "PLAYER 1";
             // 
-            // label3
+            // PLAYER2lbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Aquamarine;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(491, 168);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(187, 54);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "PLAYER 2";
+            this.PLAYER2lbl.AutoSize = true;
+            this.PLAYER2lbl.BackColor = System.Drawing.Color.Aquamarine;
+            this.PLAYER2lbl.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PLAYER2lbl.Location = new System.Drawing.Point(491, 168);
+            this.PLAYER2lbl.Name = "PLAYER2lbl";
+            this.PLAYER2lbl.Size = new System.Drawing.Size(187, 54);
+            this.PLAYER2lbl.TabIndex = 12;
+            this.PLAYER2lbl.Text = "PLAYER 2";
             // 
             // P1WINSCORE
             // 
@@ -193,6 +194,18 @@
             this.P2WINSCORE.TabIndex = 14;
             this.P2WINSCORE.Text = "SCORE:";
             // 
+            // RESETbtn
+            // 
+            this.RESETbtn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.RESETbtn.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.RESETbtn.Location = new System.Drawing.Point(511, 350);
+            this.RESETbtn.Name = "RESETbtn";
+            this.RESETbtn.Size = new System.Drawing.Size(146, 98);
+            this.RESETbtn.TabIndex = 15;
+            this.RESETbtn.Text = "RESET";
+            this.RESETbtn.UseVisualStyleBackColor = false;
+            this.RESETbtn.Click += new System.EventHandler(this.RESETbtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -200,10 +213,11 @@
             this.BackColor = System.Drawing.Color.Red;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(697, 491);
+            this.Controls.Add(this.RESETbtn);
             this.Controls.Add(this.P2WINSCORE);
             this.Controls.Add(this.P1WINSCORE);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.PLAYER2lbl);
+            this.Controls.Add(this.PLAYER1lbl);
             this.Controls.Add(this.txtbxPlayer2);
             this.Controls.Add(this.txtbxPlayer1);
             this.Controls.Add(this.SLOT9_BOTTOMRIGHT);
@@ -240,9 +254,10 @@
         private TextBox textBox1;
         private TextBox txtbxPlayer1;
         private TextBox txtbxPlayer2;
-        private Label label2;
-        private Label label3;
+        private Label PLAYER1lbl;
+        private Label PLAYER2lbl;
         private Label P1WINSCORE;
         private Label P2WINSCORE;
+        private Button RESETbtn;
     }
 }
