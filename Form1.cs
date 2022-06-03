@@ -102,10 +102,14 @@ namespace Play_Tic_Tac_Toe_game
                 Tie = false;
                 MessageBox.Show("Player 1 won the game!");
             }
+            else if (Count == 9)
+            {
+                MessageBox.Show("The game has ended in a draw!");
+            }
             if (Tie == true && Count == 9)
             {
                 string message = "DO YOU WANT TO PLAY AGAIN?";
-                string title = "THE GAME HAS ENDED";
+                string title = "THE GAME HAS ENDED IN A DRAW!";
                 MessageBoxButtons buttons = MessageBoxButtons.YesNo;
                 DialogResult result = MessageBox.Show(message, title, buttons);
                 if (result == DialogResult.Yes)
@@ -126,16 +130,17 @@ namespace Play_Tic_Tac_Toe_game
                         // MessageBox.Show("Draw!");
                     }
                 }
-                }
-                void reset()
+            }
+            void reset()
+            {
+                foreach (Button b in this.Controls)
                 {
-                    foreach (Button b in this.Controls)
-                    {
-                        b.Text = "";
-                        b.Enabled = true;
-                    }
-                    Count = 1;
+                    b.Text = "";
+                    b.Enabled = true;
                 }
+                Count = 1;
             }
         }
+
     }
+}
