@@ -121,7 +121,7 @@ namespace Play_Tic_Tac_Toe_game
 
             else if (Count == 9 && Tie == true)
             {
-                MessageBox.Show("The game has ended in a draw!");
+                MessageBox.Show("THE GAME HAS ENDED IN A DRAW!");
             }
             if (Tie == true && Count == 9)
             {
@@ -131,12 +131,7 @@ namespace Play_Tic_Tac_Toe_game
                 DialogResult result = MessageBox.Show(message, title, buttons);
                 if (result == DialogResult.Yes)
                 {
-                    var ResettedForm = new Play_Tic_Tac_Toe_game.Form1();
-                    ResettedForm.Show();
-                    this.Dispose(false);
-                    {
-                        reset();
-                    }
+                    reset();
                 }
                 else
                 {
@@ -150,13 +145,17 @@ namespace Play_Tic_Tac_Toe_game
             }
             void reset()
             {
-                foreach (Button b in this.Controls)
+                foreach (Control b in this.Controls)
                 {
-                    b.Text = "";
-                    b.Enabled = true;
+                    if (b.GetType() == typeof(Button))
+                    {
+                        b.Text = "";
+                        b.Enabled = true;
+                    }
                 }
-                Count = 1;
+                Count = 0;
             }
+
 
         }
         void Winner(string text)
@@ -172,7 +171,10 @@ namespace Play_Tic_Tac_Toe_game
             else if (text == "Player 2 won the game!")
             {
                 MessageBox.Show("Congratulations Player 2!");
-                txtbxPlayer2.Text = txtbxPlayer2.Text + 1;
+                int score = 1;
+                int txtbxscore = int.Parse(txtbxPlayer2.Text);
+                int totalScore = score + txtbxscore;
+                txtbxPlayer2.Text = totalScore.ToString();
             }
             string message = "DO YOU WANT TO PLAY AGAIN?";
             string title = "THE GAME HAS ENDED!";
@@ -202,7 +204,7 @@ namespace Play_Tic_Tac_Toe_game
                         b.Enabled = true;
                     }
                 }
-                Count = 1;
+                Count = 0;
             }
         }
     }
