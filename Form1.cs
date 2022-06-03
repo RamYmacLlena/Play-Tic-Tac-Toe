@@ -104,15 +104,18 @@ namespace Play_Tic_Tac_Toe_game
             }
             if (Tie == true && Count == 9)
             {
-                string DrawMsg = "The game has no winner. It's a draw! Do you want to play again?";
-                MessageBoxButtons DrawMsgBoxButtons = MessageBoxButtons.YesNo;
-                MessageBoxIcon DrawMsgBoxIcon = MessageBoxIcon.Exclamation;
-                DialogResult MsgBoxResult = MessageBox.Show(DrawMsg, "", DrawMsgBoxButtons, DrawMsgBoxIcon);
-                if (MsgBoxResult == DialogResult.Yes)
+                string message = "Do you want to play again?";
+                string title = "The game has ended";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result = MessageBox.Show(message, title, buttons);
+                if (result == DialogResult.Yes)
                 {
                     var ResettedForm = new Play_Tic_Tac_Toe_game.Form1();
                     ResettedForm.Show();
                     this.Dispose(false);
+                    {
+                        reset();
+                    }
                 }
                 else
                 {
@@ -123,7 +126,16 @@ namespace Play_Tic_Tac_Toe_game
                         // MessageBox.Show("Draw!");
                     }
                 }
+                }
+                void reset()
+                {
+                    foreach (Button b in this.Controls)
+                    {
+                        b.Text = "";
+                        b.Enabled = true;
+                    }
+                    Count = 1;
+                }
             }
         }
     }
-}
