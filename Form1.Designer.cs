@@ -37,8 +37,6 @@
             this.SLOT7_BOTTOMLEFT = new System.Windows.Forms.Button();
             this.SLOT8_BOTTOMMIDDLE = new System.Windows.Forms.Button();
             this.SLOT9_BOTTOMRIGHT = new System.Windows.Forms.Button();
-            this.PLAYER1 = new System.Windows.Forms.Label();
-            this.PLAYER2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // SLOT1_TOPLEFT
@@ -122,36 +120,12 @@
             this.SLOT9_BOTTOMRIGHT.UseVisualStyleBackColor = true;
             this.SLOT9_BOTTOMRIGHT.Click += new System.EventHandler(this.AllButton);
             // 
-            // PLAYER1
-            // 
-            this.PLAYER1.AutoSize = true;
-            this.PLAYER1.BackColor = System.Drawing.Color.Aqua;
-            this.PLAYER1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PLAYER1.Location = new System.Drawing.Point(546, 12);
-            this.PLAYER1.Name = "PLAYER1";
-            this.PLAYER1.Size = new System.Drawing.Size(187, 54);
-            this.PLAYER1.TabIndex = 9;
-            this.PLAYER1.Text = "PLAYER 1";
-            // 
-            // PLAYER2
-            // 
-            this.PLAYER2.AutoSize = true;
-            this.PLAYER2.BackColor = System.Drawing.Color.Aqua;
-            this.PLAYER2.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PLAYER2.Location = new System.Drawing.Point(546, 264);
-            this.PLAYER2.Name = "PLAYER2";
-            this.PLAYER2.Size = new System.Drawing.Size(187, 54);
-            this.PLAYER2.TabIndex = 10;
-            this.PLAYER2.Text = "PLAYER 2";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(800, 491);
-            this.Controls.Add(this.PLAYER2);
-            this.Controls.Add(this.PLAYER1);
             this.Controls.Add(this.SLOT9_BOTTOMRIGHT);
             this.Controls.Add(this.SLOT8_BOTTOMMIDDLE);
             this.Controls.Add(this.SLOT7_BOTTOMLEFT);
@@ -162,9 +136,8 @@
             this.Controls.Add(this.SLOT2_TOPMIDDLE);
             this.Controls.Add(this.SLOT1_TOPLEFT);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Play Tic Tac Toe";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -181,5 +154,6 @@
         private Button SLOT9_BOTTOMRIGHT;
         private Label PLAYER1;
         private Label PLAYER2;
+        private Label label1;
     }
 }
