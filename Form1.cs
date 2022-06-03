@@ -66,6 +66,7 @@ namespace Play_Tic_Tac_Toe_game
             {
                 Tie = false;
                 MessageBox.Show("Player 1 won the game!");
+                Winner("Player 1 won the game!");
             }
             if (SLOT1_TOPLEFT.Text == "X" && SLOT4_MIDDLELEFT.Text == "X" && SLOT7_BOTTOMLEFT.Text == "X")
             {
@@ -102,6 +103,7 @@ namespace Play_Tic_Tac_Toe_game
                 Tie = false;
                 MessageBox.Show("Player 1 won the game!");
             }
+
             else if (Count == 9 && Tie == true)
             {
                 MessageBox.Show("The game has ended in a draw!");
@@ -129,6 +131,49 @@ namespace Play_Tic_Tac_Toe_game
                     {
                         // MessageBox.Show("Draw!");
                     }
+                }
+            }
+            void reset()
+            {
+                foreach (Button b in this.Controls)
+                {
+                    b.Text = "";
+                    b.Enabled = true;
+                }
+                Count = 1;
+            }
+
+        }
+        void Winner(string text)
+        {
+            if (text == "Player 1 won the game!")
+            {
+                MessageBox.Show("Congratulations Player 1!");
+            }
+            else if (text == "Player 2 won the game!")
+            {
+                MessageBox.Show("Congratulations Player 2");
+            }
+            string message = "DO YOU WANT TO PLAY AGAIN?";
+            string title = "THE GAME HAS ENDED!";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show(message, title, buttons);
+            if (result == DialogResult.Yes)
+            {
+                var ResettedForm = new Play_Tic_Tac_Toe_game.Form1();
+                ResettedForm.Show();
+                this.Dispose(false);
+                {
+                    reset();
+                }
+            }
+            else
+            {
+                this.Close();
+                //else condition for when there is no winner
+                //else if (Count == 9)
+                {
+                    // MessageBox.Show("Draw!");
                 }
             }
             void reset()
