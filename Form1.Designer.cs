@@ -49,6 +49,7 @@
             // 
             // SLOT1_TOPLEFT
             // 
+            this.SLOT1_TOPLEFT.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SLOT1_TOPLEFT.Location = new System.Drawing.Point(12, 12);
             this.SLOT1_TOPLEFT.Name = "SLOT1_TOPLEFT";
             this.SLOT1_TOPLEFT.Size = new System.Drawing.Size(150, 150);
@@ -58,6 +59,7 @@
             // 
             // SLOT2_TOPMIDDLE
             // 
+            this.SLOT2_TOPMIDDLE.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SLOT2_TOPMIDDLE.Location = new System.Drawing.Point(168, 12);
             this.SLOT2_TOPMIDDLE.Name = "SLOT2_TOPMIDDLE";
             this.SLOT2_TOPMIDDLE.Size = new System.Drawing.Size(150, 150);
@@ -67,6 +69,7 @@
             // 
             // SLOT3_TOPRIGHT
             // 
+            this.SLOT3_TOPRIGHT.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SLOT3_TOPRIGHT.Location = new System.Drawing.Point(324, 12);
             this.SLOT3_TOPRIGHT.Name = "SLOT3_TOPRIGHT";
             this.SLOT3_TOPRIGHT.Size = new System.Drawing.Size(150, 150);
@@ -76,6 +79,7 @@
             // 
             // SLOT4_MIDDLELEFT
             // 
+            this.SLOT4_MIDDLELEFT.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SLOT4_MIDDLELEFT.Location = new System.Drawing.Point(12, 168);
             this.SLOT4_MIDDLELEFT.Name = "SLOT4_MIDDLELEFT";
             this.SLOT4_MIDDLELEFT.Size = new System.Drawing.Size(150, 150);
@@ -85,6 +89,7 @@
             // 
             // SLOT5_CENTER
             // 
+            this.SLOT5_CENTER.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SLOT5_CENTER.Location = new System.Drawing.Point(168, 168);
             this.SLOT5_CENTER.Name = "SLOT5_CENTER";
             this.SLOT5_CENTER.Size = new System.Drawing.Size(150, 150);
@@ -94,6 +99,7 @@
             // 
             // SLOT6_MIDDLERIGHT
             // 
+            this.SLOT6_MIDDLERIGHT.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SLOT6_MIDDLERIGHT.Location = new System.Drawing.Point(324, 168);
             this.SLOT6_MIDDLERIGHT.Name = "SLOT6_MIDDLERIGHT";
             this.SLOT6_MIDDLERIGHT.Size = new System.Drawing.Size(150, 150);
@@ -103,6 +109,7 @@
             // 
             // SLOT7_BOTTOMLEFT
             // 
+            this.SLOT7_BOTTOMLEFT.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SLOT7_BOTTOMLEFT.Location = new System.Drawing.Point(12, 324);
             this.SLOT7_BOTTOMLEFT.Name = "SLOT7_BOTTOMLEFT";
             this.SLOT7_BOTTOMLEFT.Size = new System.Drawing.Size(150, 150);
@@ -112,6 +119,7 @@
             // 
             // SLOT8_BOTTOMMIDDLE
             // 
+            this.SLOT8_BOTTOMMIDDLE.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SLOT8_BOTTOMMIDDLE.Location = new System.Drawing.Point(168, 324);
             this.SLOT8_BOTTOMMIDDLE.Name = "SLOT8_BOTTOMMIDDLE";
             this.SLOT8_BOTTOMMIDDLE.Size = new System.Drawing.Size(150, 150);
@@ -121,6 +129,7 @@
             // 
             // SLOT9_BOTTOMRIGHT
             // 
+            this.SLOT9_BOTTOMRIGHT.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SLOT9_BOTTOMRIGHT.Location = new System.Drawing.Point(324, 324);
             this.SLOT9_BOTTOMRIGHT.Name = "SLOT9_BOTTOMRIGHT";
             this.SLOT9_BOTTOMRIGHT.Size = new System.Drawing.Size(150, 150);
