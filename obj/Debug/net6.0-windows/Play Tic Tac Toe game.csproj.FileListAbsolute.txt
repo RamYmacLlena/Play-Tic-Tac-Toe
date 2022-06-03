@@ -15,3 +15,4 @@ C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\obj\Debug\n
 C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\obj\Debug\net6.0-windows\Play Tic Tac Toe game.pdb
 C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\obj\Debug\net6.0-windows\Play Tic Tac Toe game.genruntimeconfig.cache
 C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\obj\Debug\net6.0-windows\ref\Play Tic Tac Toe game.dll
+C:\Users\au\source\repos\Play Tic Tac Toe game\Play Tic Tac Toe game\obj\Debug\net6.0-windows\Play_Tic_Tac_Toe_game.Properties.Resources.resources
