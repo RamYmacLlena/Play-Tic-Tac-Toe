@@ -37,6 +37,8 @@
             this.SLOT7_BOTTOMLEFT = new System.Windows.Forms.Button();
             this.SLOT8_BOTTOMMIDDLE = new System.Windows.Forms.Button();
             this.SLOT9_BOTTOMRIGHT = new System.Windows.Forms.Button();
+            this.txtbxPlayer1 = new System.Windows.Forms.TextBox();
+            this.txtbxPlayer2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // SLOT1_TOPLEFT
@@ -120,12 +122,32 @@
             this.SLOT9_BOTTOMRIGHT.UseVisualStyleBackColor = true;
             this.SLOT9_BOTTOMRIGHT.Click += new System.EventHandler(this.AllButton);
             // 
+            // txtbxPlayer1
+            // 
+            this.txtbxPlayer1.Location = new System.Drawing.Point(595, 74);
+            this.txtbxPlayer1.Multiline = true;
+            this.txtbxPlayer1.Name = "txtbxPlayer1";
+            this.txtbxPlayer1.Size = new System.Drawing.Size(125, 34);
+            this.txtbxPlayer1.TabIndex = 9;
+            this.txtbxPlayer1.Text = "0";
+            // 
+            // txtbxPlayer2
+            // 
+            this.txtbxPlayer2.Location = new System.Drawing.Point(595, 284);
+            this.txtbxPlayer2.Multiline = true;
+            this.txtbxPlayer2.Name = "txtbxPlayer2";
+            this.txtbxPlayer2.Size = new System.Drawing.Size(125, 34);
+            this.txtbxPlayer2.TabIndex = 10;
+            this.txtbxPlayer2.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(800, 491);
+            this.Controls.Add(this.txtbxPlayer2);
+            this.Controls.Add(this.txtbxPlayer1);
             this.Controls.Add(this.SLOT9_BOTTOMRIGHT);
             this.Controls.Add(this.SLOT8_BOTTOMMIDDLE);
             this.Controls.Add(this.SLOT7_BOTTOMLEFT);
@@ -138,6 +160,7 @@
             this.Name = "Form1";
             this.Text = "Play Tic Tac Toe";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -155,5 +178,9 @@
         private Label PLAYER1;
         private Label PLAYER2;
         private Label label1;
+        private Button button1;
+        private TextBox textBox1;
+        private TextBox txtbxPlayer1;
+        private TextBox txtbxPlayer2;
     }
 }

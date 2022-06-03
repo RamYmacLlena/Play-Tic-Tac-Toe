@@ -164,10 +164,15 @@ namespace Play_Tic_Tac_Toe_game
             if (text == "Player 1 won the game!")
             {
                 MessageBox.Show("Congratulations Player 1!");
+                int score = 1;
+                int txtbxscore = int.Parse(txtbxPlayer1.Text);
+                int totalScore = score + txtbxscore;
+                txtbxPlayer1.Text = totalScore.ToString();
             }
             else if (text == "Player 2 won the game!")
             {
                 MessageBox.Show("Congratulations Player 2!");
+                txtbxPlayer2.Text = txtbxPlayer2.Text + 1;
             }
             string message = "DO YOU WANT TO PLAY AGAIN?";
             string title = "THE GAME HAS ENDED!";
@@ -175,12 +180,8 @@ namespace Play_Tic_Tac_Toe_game
             DialogResult result = MessageBox.Show(message, title, buttons);
             if (result == DialogResult.Yes)
             {
-                var ResettedForm = new Play_Tic_Tac_Toe_game.Form1();
-                ResettedForm.Show();
-                this.Dispose(false);
-                {
                     reset();
-                }
+                
             }
             else
             {
@@ -193,14 +194,16 @@ namespace Play_Tic_Tac_Toe_game
             }
             void reset()
             {
-                foreach (Button b in this.Controls)
+                foreach (Control b in this.Controls)
                 {
-                    b.Text = "";
-                    b.Enabled = true;
+                    if (b.GetType() == typeof(Button))
+                    {
+                        b.Text = "";
+                        b.Enabled = true;
+                    }
                 }
                 Count = 1;
             }
         }
-
     }
 }
